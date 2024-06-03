@@ -179,7 +179,6 @@ export async function fetchCustomers() {
       FROM customers
       ORDER BY name ASC
     `
-
     const customers = data.rows
     return customers
   } catch (err) {
