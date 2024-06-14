@@ -10,9 +10,7 @@ async function Page() {
     const customers = await fetchCustomers()
     return (
         <main>
-            <Breadcrumbs
-                breadcrumbs={breadcrumbs}>
-            </Breadcrumbs>
+            <Breadcrumbs breadcrumbs={breadcrumbs} ></Breadcrumbs>
             <Form customers={customers}></Form>
         </main>
     );
